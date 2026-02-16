@@ -12,6 +12,10 @@ def AlmostPerfectNumber (n : ℕ) : Prop :=
 def IsPowerOfTwo (n : ℕ) : Prop :=
   ∃ k : ℕ, n = 2 ^ k
 
+theorem PowerOfTwoIsAlmostPerfect (k : ℕ) :
+  AlmostPerfectNumber (2 ^ k) := by
+  sorry
+
 -- The Non-Power-Of-2 Almost Perfect Numbers Conjecture asks if there is an
 -- Almost perfect number that is not a power of 2
 theorem NonPowOfTwoAlmostPerfectNumbersConjecture :
