@@ -1,13 +1,18 @@
 # NULL
 
-## GitHub configuration
+## Overview
 
-To set up your new GitHub repository, follow these steps:
+My repository for my work with the Northwestern Undergraduate Lean Lab. Supervised by Dr. Erin Griffin and Dr. Martin Bishop.
 
-* Under your repository name, click **Settings**.
-* In the **Actions** section of the sidebar, click "General".
-* Check the box **Allow GitHub Actions to create and approve pull requests**.
-* Click the **Pages** section of the settings sidebar.
-* In the **Source** dropdown menu, select "GitHub Actions".
+Currently working on contributing to Mathlib and Formal Conjectures
 
-After following the steps above, you can remove this section from the README file.
+## Building
+```bash
+lake exe cache get
+lake build
+```
+
+## Contents
+- `almostperfectnum.lean` — Formalizing conjectures about almost perfect numbers (Formal Conjectures #2240)
+- `NULL.lean` - Some scratch work and examples
+- `aliquot.lean` - Theorem on boundedness of aliquot sequences
